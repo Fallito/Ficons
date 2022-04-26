@@ -1,22 +1,22 @@
 #!/bin/bash
 
 #/**
-# * @file FIconsRepo/Ficons.sh
-# * @push tv icons
+# * @file git.sh
+# * @push guide.xml
 # * @author Fallito
-# * @date 25/mar/2021
+# * @date 14/feb/2021
+# * PASS=Giovanni7feb2021@github.com
 # */
 
 #push ./guide.xml for daily cronjob
 
 USER=Fallito
-PASS=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
-echo "begin..." 
-git -C /home/fallito/wg++/FIconsRepo/Ficons add .
-echo "add..."
-git -C /home/fallito/wg++/FIconsRepo/Ficons commit -m"add icons"
+PASS=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
+echo "status"
+git status
 echo "commit..."
-git -C /home/fallito/wg++/FIconsRepo/Ficons status
-echo "Pushing data to remote server!!!"
-git -C /home/fallito/wg++/guide push -u https://$USER:$PASS@github.com/Fallito/Ficons.git
-
+git commit -m "add new icons" guide.xml
+echo "add(set-url)..." 
+git remote set-url origin https://github.com/Fallito/Ficons.git
+echo "push..."
+git push -u https://$USER:$PASS@github.com/Fallito/guide.git
