@@ -14,9 +14,11 @@ USER=Fallito
 PASS=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
 echo "status"
 git status
+echo "add..."
+git add .
 echo "commit..."
-git commit -m "add new icons" guide.xml
-echo "add(set-url)..." 
+git commit -m "add new icons"
+echo "set-ur)..." 
 git remote set-url origin https://github.com/Fallito/Ficons.git
 echo "push..."
 git push -u https://$USER:$PASS@github.com/Fallito/guide.git
