@@ -18,7 +18,7 @@ echo "add..."
 git add .
 echo "commit..."
 git commit -m "add new icons"
-echo "set-ur)..." 
+echo "set-url..." 
 git remote set-url origin https://github.com/Fallito/Ficons.git
 echo "push..."
-git push -u https://$USER:$PASS@github.com/Fallito/guide.git
+git push -u https://$USER:$PASS@github.com/Fallito/Ficons.git
