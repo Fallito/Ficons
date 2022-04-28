@@ -11,7 +11,7 @@
 #push ./guide.xml for daily cronjob
 
 USER=Fallito
-PASS=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
+PASS=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
 echo "status"
 git status
 echo "add..."
