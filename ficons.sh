@@ -11,13 +11,19 @@
 #push ./guide.xml for daily cronjob
 
 USER=Fallito
-PASS=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
+PASS=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
+
 echo "status"
+
 git status
+
 echo "add..."
+
 git add .
 echo "commit..."
+
 git commit -m "add new icons"
+
 echo "set-url..." 
 git remote set-url origin https://github.com/Fallito/Ficons.git
 echo "push..."
